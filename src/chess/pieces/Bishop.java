@@ -12,7 +12,11 @@ public class Bishop extends ChessPiece {
 
     @Override
     public String toString() {
-        return "B";
+        if (getColor() == Color.WHITE){
+            return "♗";
+        } else {
+            return "♝";
+        }
     }
 
     @Override
